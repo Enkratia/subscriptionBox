@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sub Box</title>
+  <script src="https://kit.fontawesome.com/15801db546.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+</head>
+
+<body>
+  <div class="start-btn">
+    <a href="#">View Modal</a>
+  </div>
+  <div class="center modal-box">
+    <div class="fas fa-times"></div>
+    <div class="fas fa-envelope icon1"></div>
+    <header>Don`t Miss Updates From Us!</header>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, distinctio ipsum!</p>
+    <form>
+      <div class="fas fa-envelope icon2"></div>
+      <input type="email" placeholder="abc@example.com" required>
+      <button>Subscribe</button>
+    </form>
+    <div class="icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".start-btn").click(function () {
+        $(".modal-box").toggleClass("show-modal");
+        $(".start-btn").toggleClass("show-modal");
+      });
+      $(".fa-times").click(function () {
+        $(".modal-box").toggleClass("show-modal");
+        $(".start-btn").toggleClass("show-modal");
+      });
+    });
+  </script>
+</body>
+
+</html>
